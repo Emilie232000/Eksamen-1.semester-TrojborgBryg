@@ -1,0 +1,682 @@
+/* ---- Basic CSS reset ------ */
+*,
+:after,
+:before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+}
+
+/* --------------------------- Start ---------------------------- */
+
+/* -----------------------------------------------
+                   Burger
+----------------------------------------------- */
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+/* -----------------------------------------------
+                     Nav bar
+----------------------------------------------- */
+
+.header {
+    position: sticky;
+    width: 100%;
+    background: #F0B540; 
+    z-index: 1000;
+}
+
+.header.fixed {
+    background: rgba(255, 255, 255, 1); 
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+   
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-item {
+    font-weight: 100;
+    color: #D8B35E;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #D8B35E;
+
+}
+
+.nav-link:hover{
+    color: #ffffff;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+ 
+}
+
+/* ------ hover menu -------- */
+
+.dropdownmenu ul, .dropdownmenu li{
+    margin: 0;
+    padding: 0;
+}
+
+.dropdownmenu ul{
+    background: #F0B540;
+    list-style: none;
+    width: 100%;
+}
+
+.dropdownmenu li{
+    float: left;
+    position: relative;
+    width: auto;
+}
+
+.dropdownmenu a{
+    background: #F0B540;
+    color: white;
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.dropdownmenu li:hover a{
+    background: #A33822;
+}
+
+/* -------- submenu1 ------ */
+
+#submenu1{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+li:hover ul#submenu1{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+}
+
+#submenu1 li{
+    float: none;
+    width: 100%;
+}
+
+#submenu1 a:hover{
+    background: darkred;
+}
+
+#submenu1 a{
+    background-color: #A33822;
+}
+
+/* -------- submenu2 ------ */
+
+#submenu2{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+li:hover ul#submenu2{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+}
+
+#submenu2 li{
+    float: none;
+    width: 100%;
+}
+
+#submenu2 a:hover{
+    background: darkred;
+}
+
+#submenu2 a{
+    background-color: #A33822;
+}
+
+/* -------- submenu3 ------ */
+
+#submenu3{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+li:hover ul#submenu3{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+}
+
+#submenu3 li{
+    float: none;
+    width: 100%;
+}
+
+#submenu3 a:hover{
+    background: darkred;
+}
+
+#submenu3 a{
+    background-color: #A33822;
+}
+
+/* -------- submenu4 ------ */
+
+#submenu4{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+li:hover ul#submenu4{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+}
+
+#submenu4 li{
+    float: none;
+    width: 100%;
+}
+
+#submenu4 a:hover{
+    background: darkred;
+}
+
+#submenu4 a{
+    background-color: #A33822;
+}
+
+/* ------------------------------ Theme style ------------------------------------*/
+
+.theme_page{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.theme_elemenet_backgroundcolor{
+    background-color: #F0B540;
+}
+
+h1{
+    font-family: 'Libre Bodoni';
+    font-size: 55px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Oxygen';
+    font-size: 36px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.side_overskrift{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+p{
+    font-family: 'Oxygen';
+    font-weight: lighter;
+}
+
+/* ------------------------------------------------------------------------------
+                 Main Forside  
+---------------------------------------------*/
+
+body{
+    background-color: #f5f5f5;
+}
+
+#forsidebillede {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.forside_billede{
+    position: relative;
+}
+
+.forside_overskrift{
+    position: absolute;
+    padding: 20px;
+    z-index: 2;
+    top: 15%;
+    width: 100%;
+}
+
+.forside_klassiskesmage{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    padding-bottom: 2rem;
+}
+
+.smag1, .smag2, .smag3{
+    display: flex;
+    align-items: center;
+}
+
+.forside_underoverskrift{
+    padding: 2rem;
+}
+
+#brygtradition, #brygrobust, #brygklasbock{
+   width: 90%;
+}
+
+#forside_bryg1, #forside_bryg2, #forside_bryg3{
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------------------------------------------------------
+                 Side 2 - øl sortiment  
+---------------------------------------------*/
+  
+#øl_baggrund{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.side2_main{
+    margin: 0;
+    padding: 0;
+    background-image: url('img/øl_side2.png');
+    background-size: cover; /* Dækker hele skærmen */
+    background-position: center; /* Centrerer billedet */
+    background-repeat: no-repeat;
+}
+
+/* ----------- knapper side 2 ------------*/
+
+.text_knap1, .text_knap2, .text_knap3, .text_knap4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border: 2px;
+    border-color: #f5f5f5;
+  }
+  
+  .knap_sortiment{
+    width: 275px;
+    height: 80px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: #A33822;
+    margin: 10px;
+  }
+
+/* ------------------------------------------------------------------------------
+                 Side 3 - klassiske smage  
+---------------------------------------------*/
+
+.side3_indhold{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.side3_indhold img{
+    width: 50%;
+    height: auto;
+}
+
+.side3_indhold p{
+    padding-right: 10px;
+}
+
+.smags_varianter1, .smags_varianter2, .smags_varianter3, .smags_varianter4{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ------------------------------------------------------------------------------
+                 Side 4 - ølsmagning  
+---------------------------------------------*/
+
+#olsmagning_img{
+    width: 100%;
+}
+
+.side4_tekst{
+    padding: 25px;
+}
+
+/* --------- knap ---------- */
+
+.text_knap4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border: 2px;
+    border-color: #f5f5f5;
+  }
+  
+  .knap_book{
+    width: 275px;
+    height: 80px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: #A33822;
+    margin: 10px;
+  }
+
+  .side4_tekst{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 2;
+  }
+
+/* ------------------------------------------------------------------------------
+                 Side 5 - Hvordan laver vi øllen  
+---------------------------------------------*/
+
+#img_historie1, #img_historie2, #img_historie3{
+    width: 100%;
+}
+
+.side5_tekst1, .side5_tekst2{
+    padding: 25px;
+}
+
+/* ------------------------------------------------------------------------------
+                 Page footer and its sections  
+---------------------------------------------*/
+
+.some_image{
+    width: 32px;
+    margin-right: 16px;
+    margin-top: 16px;
+  }
+  
+  .page_footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+  }
+  
+  .page_footer_address{
+    margin-top: 5px;
+  }
+  
+
+/* ------------------------------------------------------------------------------
+                 Media quiries  
+---------------------------------------------*/
+@media only screen and (max-width: 768px) {
+   
+    .nav-menu {
+        position: fixed;
+        right: -500%;
+        transition: 0.3s;
+        top: 6.5rem;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        padding: 30px;
+        background-color: #A33822;
+        width: 50%;
+        text-align: right;
+        color: #D8B35E;
+    }
+
+    .nav-menu.active {
+        right: 0;
+        z-index: 200;
+        text-decoration: none;
+    }
+
+    .nav-item {
+        margin: 5px;
+        padding: 10rem;
+      
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* --------- side1 ---------- */
+
+    .forside_overskrift{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 795.85px;
+        right: 0;
+    }
+
+    .forside_billede{
+        width: 50%;
+    }    
+      
+
+    /* --------- side2 ---------- */
+
+    .side2_container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "side_overskrift side_overskrift"
+          "side2_main side2_main"
+          "side2_main side2_main"
+      }
+      
+      .side_overskrift { grid-area: side_overskrift; }
+      
+      .side2_main {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "text_knap1 text_knap2"
+          "text_knap3 text_knap4";
+        grid-area: side2_main;
+      }
+      
+      .text_knap1 { grid-area: text_knap1; }
+      
+      .text_knap2 { grid-area: text_knap2; }
+      
+      .text_knap3 { grid-area: text_knap3; }
+      
+      .text_knap4 { grid-area: text_knap4; }
+      
+
+    /* --------- side3 ---------- */
+
+    .side3_container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "side_overskrift side_overskrift"
+          "smags_varianter1 smags_varianter2"
+          "smags_varianter3 smags_varianter4";
+      }
+      
+      .side_overskrift { grid-area: side_overskrift; }
+      
+      .smags_varianter1 { grid-area: smags_varianter1; }
+      
+      .smags_varianter2 { grid-area: smags_varianter2; }
+      
+      .smags_varianter3 { grid-area: smags_varianter3; }
+      
+      .smags_varianter4 { grid-area: smags_varianter4; }
+      
+
+    /* --------- side4 ---------- */
+
+    .side4_container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "side_overskrift side_overskrift"
+          "side4_tekst img_smagning"
+          "text_knap4 img_smagning";
+      }
+      
+      .side_overskrift { grid-area: side_overskrift; }
+      
+      .side4_tekst { grid-area: side4_tekst; }
+      
+      .img_smagning { grid-area: img_smagning; }
+      
+      .text_knap4 { grid-area: text_knap4; }
+      
+
+    /* --------- side5 ---------- */
+
+    .side5_container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "side_overskrift side_overskrift"
+          "side5_img1 side5_tekst1"
+          "side5_img2 side5_tekst2";
+      }
+      
+      .side_overskrift { grid-area: side_overskrift; }
+      
+      .side5_img1 { grid-area: side5_img1; }
+      
+      .side5_tekst1 { grid-area: side5_tekst1; }
+      
+      .side5_img2 { grid-area: side5_img2; }
+      
+      .side5_tekst2 { grid-area: side5_tekst2; }
+      
+      .side5_img3 { 
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+      .side5_tekst1, .side5_tekst2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px;
+      }
+      
+      #img_historie3{
+        width: 50%;
+      }
+}

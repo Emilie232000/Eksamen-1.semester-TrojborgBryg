@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alkoholfri øl, hyggestunder, drik forsvarligt, non-alcohol">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Libre Bodoni' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+    <title>TrøjborgBryg</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+          <!-- Fimaets logo -->
+            <a href="index.html">
+          <img src="img/logo3.png" class="companylogo" alt="logo">
+          </a>
+        
+          
+                <!-- Menu items -->
+            <nav class="dropdownmenu">
+                <ul class="nav-menu">
+                    <li><a href="index2.html" class="navitem">Øl sortiment </a>
+                        <ul id="submenu1">
+                            <li><a href="index3.html">Klassike smage</a></li>
+                            <li><a href="index6.html">Nye smage</a></li>
+                            <li><a href="index6.html">Mørke øl</a></li>
+                            <li><a href="index6.html">Lyse øl</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index4.html" class="navitem">Ølsmagning </a>
+                        <ul id="submenu2">
+                            <li><a href="index4.html">Om smagningen</a></li>
+                            <li><a href="index6.html">Book en smagning</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="index6.html" class="navitem">Shop </a></li>
+                    <li><a href="index5.html" class="navitem">Om øllen </a>
+                        <ul id="submenu3">
+                            <li><a href="index5.html">Hvordan laver vi øllen</a></li>
+                            <li><a href="index6.html">Historien bag</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="index6.html" class="navitem">Om os </a>
+                        <ul id="submenu4">
+                            <li><a href="index6.html">Kontakt</a></li>
+                            <li><a href="index6.html">Mission</a></li>
+                            <li><a href="index6.html">FAQ</a></li>
+                        </ul>
+                    </li> 
+                </ul>
+            </nav>
+                <!-- Burger -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <script>
+                    const hamburger = document.querySelector(".hamburger");
+                const navMenu = document.querySelector(".nav-menu");
+            
+                hamburger.addEventListener("click", mobileMenu);
+            
+                function mobileMenu() {
+                    hamburger.classList.toggle("active");
+                    navMenu.classList.toggle("active");
+                }
+            
+                const navLink = document.querySelectorAll(".nav-link");
+            
+                navLink.forEach(n => n.addEventListener("click", closeMenu));
+            
+                function closeMenu() {
+                    hamburger.classList.remove("active");
+                    navMenu.classList.remove("active");
+                }
+            </script>
+    </header>
+<div class="forside_container">
+        <div class="forside_overskrift">
+            <h1>Nyd en slurk</h1>
+        </div>
+
+        <a href="index2.html">    
+            <div class="forside_billede">
+                <img id="forsidebillede" src="img/forside_1.png" alt="forside billede">
+            </div>
+        </a>
+
+        <div class="forside_underoverskrift">
+            <h2>Prøv vores klassiske øl smage</h2>
+        </div>
+        <div class="forside_klassiskesmage">
+            <div class="smag1">
+                <a id="forside_bryg1" href="index3.html">
+                    <img id="brygtradition" src="img/brygtradition.png" alt="Traditionsbryg">
+                </a>
+            </div>
+            <div class="smag2">
+                <a id="forside_bryg2" href="index3.html">
+                    <img id="brygrobust" src="img/brygrobust.png" alt="Robust IPA">
+                </a>
+            </div>
+            <div class="smag3">
+                <a id="forside_bryg3" href="index3.html">
+                    <img id="brygklasbock" src="img/brygklasbock.png" alt="Klassisk bock">
+                </a>    
+            </div>
+        </div>
+    <footer class="page_footer theme_elemenet_backgroundcolor">
+        <section class="page_footer_section" id="contact">
+            <div class="page_footer_address">
+                <p>Ibsensgade 12 <br>
+                8200 Aarhus N<br>
+                Trøjborgbryg@mail.dk <br>
+                Tlf. 23 24 46 77 <br></p>
+            </div>
+        </section>
+        
+        <section class="page_footer_section">
+            <a href="http://facebook.com" target="_blank"><img src="img/f_logo.png" alt="Facebook" class="some_image"></a>
+            <a href="http://www.instagram.com" target="_blank"><img src="img/Instagram.png" alt="Instagram" class="some_image"></a>
+            <a href="http://www.twitter.com" target="_blank"><img src="img/x-logo.png" alt="twitter" class="some_image"></a>
+        </section>
+    </footer>
+</div>
+</body>
+</html>

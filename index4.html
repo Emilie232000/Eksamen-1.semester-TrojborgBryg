@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alkoholfri øl, hyggestunder, drik forsvarligt, non-alcohol">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Libre Bodoni' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+    <title>TrøjborgBryg ⎥ Ølsmagning</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+          <!-- Fimaets logo -->
+            <a href="index.html">
+          <img src="img/logo3.png" class="companylogo" alt="logo">
+          </a>
+        
+
+                <!-- Menu items -->
+            <nav class="dropdownmenu">
+                <ul class="nav-menu">
+                    <li><a href="index2.html" class="navitem">Øl sortiment </a>
+                        <ul id="submenu1">
+                            <li><a href="index3.html">Klassike smage</a></li>
+                            <li><a href="index6.html">Nye smage</a></li>
+                            <li><a href="index6.html">Mørke øl</a></li>
+                            <li><a href="index6.html">Lyse øl</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index4.html" class="navitem">Ølsmagning </a>
+                        <ul id="submenu2">
+                            <li><a href="index4.html">Om smagningen</a></li>
+                            <li><a href="index6.html">Book en smagning</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="index6.html" class="navitem">Shop </a></li>
+                    <li><a href="index5.html" class="navitem">Om øllen </a>
+                        <ul id="submenu3">
+                            <li><a href="index5.html">Hvordan laver vi øllen</a></li>
+                            <li><a href="index6.html">Historien bag</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="index6.html" class="navitem">Om os </a>
+                        <ul id="submenu4">
+                            <li><a href="index6.html">Kontakt</a></li>
+                            <li><a href="index6.html">Mission</a></li>
+                            <li><a href="index6.html">FAQ</a></li>
+                        </ul>
+                    </li> 
+                </ul>
+            </nav>
+                <!-- Burger -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <script>
+                    const hamburger = document.querySelector(".hamburger");
+                const navMenu = document.querySelector(".nav-menu");
+            
+                hamburger.addEventListener("click", mobileMenu);
+            
+                function mobileMenu() {
+                    hamburger.classList.toggle("active");
+                    navMenu.classList.toggle("active");
+                }
+            
+                const navLink = document.querySelectorAll(".nav-link");
+            
+                navLink.forEach(n => n.addEventListener("click", closeMenu));
+            
+                function closeMenu() {
+                    hamburger.classList.remove("active");
+                    navMenu.classList.remove("active");
+                }
+            </script>
+    </header>
+<div class="side4_container">
+    <div class="side_overskrift">
+        <h1>Ølsmagning</h1>
+    </div>
+
+    <div class="img_smagning">
+        <img id="olsmagning_img" src="img/olsmagning.png" alt="ølsmagning">
+    </div>
+
+    <div class="side4_tekst">
+        <p>Dyk ned i en verden af sanselige oplevelser med TrøjborgBrygs eksklusive ølsmagning. 
+            Vores brygmestre har nøje udvalgt og brygget en række unikke øl, der inviterer dig 
+            til at udforske smagsnicher, du måske aldrig har oplevet før.</p>
+            <br>
+        <p>Oplev en palet af smagsoplevelser, fra forfriskende citrusnoter til dybe ristede undertoner. 
+            Vores ølsmagning er en rejse gennem kompleksiteten af brygkunsten.</p>
+            <br>
+        <p>Vores dygtige brygmestre vil guide dig gennem hvert trin af smagningen, dele hemmelighederne 
+            bag bryggeprocessen og give indsigt i, hvordan man afdækker de skjulte smagsnuancer.</p>
+            <br>
+        <p>Få adgang til unikke og eksklusive øl, der kun er tilgængelige under vores ølsmagning. 
+            Hver slurk er en invitation til at udforske og nyde sjældne bryg.</p>
+    </div>
+
+    <div class="text_knap4">
+        <a href="index6.html">
+            <button type="submit" class="knap_book"><h2>Book</h2></button>
+        </a>
+    </div>
+</div>
+    <footer class="page_footer theme_elemenet_backgroundcolor">
+        <section class="page_footer_section" id="contact">
+            <div class="page_footer_address">
+                <p>Ibsensgade 12 <br>
+                8200 Aarhus N<br>
+                Trøjborgbryg@mail.dk <br>
+                Tlf. 23 24 46 77 <br></p>
+            </div>
+        </section>
+        
+        <section class="page_footer_section">
+            <a href="http://facebook.com" target="_blank"><img src="img/f_logo.png" alt="Facebook" class="some_image"></a>
+            <a href="http://www.instagram.com" target="_blank"><img src="img/Instagram.png" alt="Instagram" class="some_image"></a>
+            <a href="http://www.twitter.com" target="_blank"><img src="img/x-logo.png" alt="twitter" class="some_image"></a>
+        </section>
+    </footer>
+</body>
+</html>
